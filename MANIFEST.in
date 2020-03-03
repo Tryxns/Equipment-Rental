@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include equipment_rental *.css
+recursive-include equipment_rental *.csv
+recursive-include equipment_rental *.html
+recursive-include equipment_rental *.ico
+recursive-include equipment_rental *.js
+recursive-include equipment_rental *.json
+recursive-include equipment_rental *.md
+recursive-include equipment_rental *.png
+recursive-include equipment_rental *.py
+recursive-include equipment_rental *.svg
+recursive-include equipment_rental *.txt
+recursive-exclude equipment_rental *.pyc
