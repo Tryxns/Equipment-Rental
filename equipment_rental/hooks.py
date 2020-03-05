@@ -87,6 +87,12 @@ app_license = "MIT"
 #	}
 # }
 
+doc_events = {
+    "Asset": {
+        "on_submit": "equipment_rental.equipment_rental.automatic_action.create_equipment_for_rent_entry"
+    }
+}
+
 # Scheduled Tasks
 # ---------------
 
@@ -102,10 +108,7 @@ app_license = "MIT"
 # 	],
 # 	"weekly": [
 # 		"equipment_rental.tasks.weekly"
-# 	]
-# 	"monthly": [
-# 		"equipment_rental.tasks.monthly"
-# 	]
+# 	]create_equipment_for_rent_entry
 # }
 
 # Testing
@@ -127,3 +130,16 @@ app_license = "MIT"
 # 	"Task": "equipment_rental.task.get_dashboard_data"
 # }
 
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            [
+                "name", "in",
+                [
+                    "Asset-create_equipment_for_rent_entry",
+                ]
+            ]
+        ]
+    }
+]

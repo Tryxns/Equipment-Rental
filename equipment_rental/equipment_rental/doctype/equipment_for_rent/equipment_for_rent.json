@@ -1,0 +1,88 @@
+{
+ "autoname": "RENT-EQ-.##########",
+ "creation": "2020-03-04 14:04:39.710471",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "asset_item",
+  "column_break_3",
+  "picture",
+  "picture_attachment",
+  "section_break_5",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "asset_item",
+   "fieldtype": "Link",
+   "label": "Asset Item",
+   "options": "Asset"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "picture",
+   "fieldtype": "Image",
+   "label": "Picture",
+   "options": "picture_attachment"
+  },
+  {
+   "fieldname": "picture_attachment",
+   "fieldtype": "Attach Image",
+   "label": "Picture Attachment"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  }
+ ],
+ "modified": "2020-03-04 17:01:23.831156",
+ "modified_by": "Administrator",
+ "module": "Equipment Rental",
+ "name": "Equipment for rent",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
